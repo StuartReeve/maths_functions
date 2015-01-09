@@ -9,6 +9,12 @@ void subtract(int* num, int a)
 {
 	*num -= a;
 }
+
+void multiply(int* num, int a)
+{
+	*num *= a;
+}
+
 	
 
 int main()
@@ -17,6 +23,8 @@ int main()
 	add(&num,4);
 	printf("%i \n",num);
 	subtract(&num, 7);
+	printf("%i \n",num);
+	multiply(&num, 100);
 	printf("%i \n",num);
 	return 0;	
 }
