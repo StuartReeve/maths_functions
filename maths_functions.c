@@ -2,7 +2,7 @@
 
 void add(int* num, int a)
 {
-	*num = *num + a;
+	*num += a;
 }
 
 void subtract(int* num, int a)
@@ -15,6 +15,11 @@ void multiply(int* num, int a)
 	*num *= a;
 }
 
+void divide(int* num, int a)
+{
+	*num /= a;	
+}
+
 	
 
 int main()
@@ -25,6 +30,8 @@ int main()
 	subtract(&num, 7);
 	printf("%i \n",num);
 	multiply(&num, 100);
+	printf("%i \n",num);
+	divide(&num, 2);
 	printf("%i \n",num);
 	return 0;	
 }
